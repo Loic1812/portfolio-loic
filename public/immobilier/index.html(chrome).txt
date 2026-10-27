@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobilier Côte d'Ivoire</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#FF8C00',secondary:'#E67300'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F8F8F8;
+        }
+        .property-card:hover {
+            box-shadow: 0 4px 12px rgba(255, 140, 0, 0.15);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Nav Bar -->
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="flex items-center justify-between p-4">
+            <div class="flex items-center">
+                <button class="w-10 h-10 flex items-center justify-center mr-3 cursor-pointer">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+                <h1 class="text-xl font-['Pacifico'] text-primary">logo</h1>
+            </div>
+            <div class="flex items-center">
+                <button class="w-10 h-10 flex items-center justify-center cursor-pointer">
+                    <i class="ri-notification-3-line ri-lg"></i>
+                </button>
+                <button class="w-10 h-10 flex items-center justify-center ml-2 cursor-pointer">
+                    <i class="ri-user-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        <div class="px-4 pb-2">
+            <div class="relative">
+                <input type="text" placeholder="Rechercher un bien immobilier" class="w-full py-2 pl-10 pr-4 border border-primary rounded-button bg-white text-sm">
+                <div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center">
+                    <i class="ri-search-line text-gray-500"></i>
+                </div>
+            </div>
+        </div>
+        <div class="flex border-b border-gray-200">
+            <button class="flex-1 py-3 text-xs font-medium text-primary border-b-2 border-primary">
+                À louer
+            </button>
+            <button class="flex-1 py-3 text-xs font-medium text-gray-500">
+                À vendre
+            </button>
+            <button class="flex-1 py-3 text-xs font-medium text-gray-500">
+                Nouveautés
+            </button>
+            <button class="flex-1 py-3 text-xs font-medium text-gray-500">
+                Favoris
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-[134px] pb-16 px-4">
+        <!-- Categories -->
+        <div class="mb-6 overflow-x-auto">
+            <div class="flex space-x-4 py-2 w-max">
+                <div class="flex flex-col items-center w-16">
+                    <div class="w-12 h-12 rounded-…>
